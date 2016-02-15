@@ -1,0 +1,46 @@
+<ion-view title="Create Team">
+    <ion-pane>
+  
+      <ion-content class="has-header padding" >
+          
+          <form name="myForm" novalidate>
+          
+          <div class="list">
+              
+              <label class="item item-input">
+              <span  class="input-lable">Teamname:</span>
+              <input type="text" name="teanname" ng-model="teamname"  required />     
+              </label>
+              
+               </div> 
+              
+              <div class="list">
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Member1</span>
+    <input type="text" name="member1" ng-model="member1" placeholder="" required />
+  </label>
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Member2</span>
+    <input type="text" name="member2" ng-model="member2" placeholder="" required/>
+  </label>
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Member3</span>
+    <input type="text" name="member3" ng-model="member3" placeholder="" required/>
+  </label>
+</div>
+           <!--   <div class="padding"> 
+              <p ng-show="myForm.username.$error.required">*Username is required </p>
+              <p ng-show="myForm.username.$invalid && !myForm.username.$pristine">* Username must be a valid email </p>
+              <p ng-show="myForm.password.$error.required">*Password is required </p>
+              </div> --> 
+              
+              <div class="col text-center">
+                  <button class="button button-stable" ui-sref="home2"> submit </button>
+              </div>       
+              
+          </form>
+          
+                 
+      </ion-content>
+    </ion-pane>
+</ion-view>

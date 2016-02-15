@@ -1,0 +1,32 @@
+<ion-view title="Login">
+ <ion-pane>
+     
+       
+     
+   <ion-content >
+       <h5 class="col text-center"> Walk Rally </h5>
+    <form name="myForm" novalidate>
+        <div class="list">
+            <label class="item item-input">
+                <span class="input-label">Username</span>
+                <input type="email" name="username" ng-model="username" required>
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Password</span>
+                <input type="text" name="password" ng-model="password"  required>
+            </label>
+        </div>
+        <div class="padding">
+            <p ng-show="myForm.username.$error.required">* Username is required</p>
+            <p ng-show="myForm.username.$invalid && !myForm.username.$pristine">* Username must be an email address</p>
+            <p ng-show="myForm.password.$error.required">* Password is required</p>
+        </div>
+        <div class="padding">
+            <a type="button" class="button button-block button-positive" ng-disabled="myForm.$invalid" href="#/home">Submit</a>
+        </div>
+    </form>
+</ion-content>
+</ion-pane>
+   
+ 
+</ion-view>
